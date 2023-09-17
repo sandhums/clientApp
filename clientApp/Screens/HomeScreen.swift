@@ -17,12 +17,17 @@ struct HomeScreen: View {
             .navigationTitle("Home")
             .navigationBarBackButtonHidden(true)
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItem(placement: .topBarLeading) {
                     Button("Logout") {
                         model.logout()
                         appState.routes.append(.login)
                     }
-                    
+                }
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button("Logout") {
+                            model.logout()
+                            appState.routes.append(.login)
+                        }
                 }
             }
     }

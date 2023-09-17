@@ -61,12 +61,12 @@ struct HTTPClient {
             
             var headers = ["Content-Type": "application/json"]
             
-//            let defaults = UserDefaults.standard
-//            guard let token = defaults.string(forKey: "authToken") else {
-//                return headers
-//            }
-//            
-//            headers["Authorization"] = "Bearer \(token)"
+            let defaults = UserDefaults.standard
+            guard let token = defaults.string(forKey: "authToken") else {
+                return headers
+            }
+            
+            headers["Authorization"] = "Bearer \(token)"
             return headers
         }
     

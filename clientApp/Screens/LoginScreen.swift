@@ -52,13 +52,13 @@ struct LoginScreen: View {
                     appState.routes.append(.register)
                 }.buttonStyle(.borderless)
             }
-            Text(errorMessage)
+           // Text(errorMessage)
         }
         .navigationTitle("Login")
         .navigationBarBackButtonHidden(true)
         .sheet(item: $appState.errorWrapper) { errorWrapper in
             ErrorView(errorWrapper: errorWrapper)
-                .presentationDetents([.medium])
+                .presentationDetents([.fraction(0.25)])
         }
     }
 }

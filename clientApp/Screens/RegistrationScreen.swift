@@ -22,21 +22,23 @@ struct RegistrationScreen: View {
     
     private func register() async {
         do {
-           let registerResponseDTO = try await model.register(email: email, password: password)
+            let registerResponseDTO = try await model.register(email: email, password: password)
             if !registerResponseDTO.error {
                 appState.routes.append(.login)
             } else {
-                errorMessage = registerResponseDTO.reason ?? ""
+                appState.errorWrapper = ErrorWrapper(error: AppError.register, guidance: registerResponseDTO.reason ?? "")
+                //errorMessage = registerResponseDTO.reason ?? ""
             }
         } catch {
-            errorMessage = error.localizedDescription
+           //errorMessage = error.localizedDescription
+            appState.errorWrapper = ErrorWrapper(error: error, guidance: error.localizedDescription)
         }
     }
     var body: some View {
         Form {
             TextField("Email", text: $email)
                 .textInputAutocapitalization(.never)
-           SecureField("Password", text: $password)
+            SecureField("Password", text: $password)
             
             HStack {
                 Button("Register"){
@@ -50,8 +52,13 @@ struct RegistrationScreen: View {
                     appState.routes.append(.login)
                 }.buttonStyle(.borderless)
             }
-            Text(errorMessage)
-        }.navigationTitle("Register")
+           // Text(errorMessage)
+        }
+        .navigationTitle("Register")
+        .sheet(item: $appState.errorWrapper) { errorWrapper in
+                ErrorView(errorWrapper: errorWrapper)
+                    .presentationDetents([.fraction(0.25)])
+            }
     }
 }
 

@@ -13,12 +13,19 @@ let errorWrapper: ErrorWrapper
 
 var body: some View {
     VStack {
-        Text("Error has occured in the application.")
-            .font(.headline)
-            .padding([.bottom], 10)
-        Text(errorWrapper.error.localizedDescription)
+        HStack {
+            Image(systemName: "circle.hexagongrid.fill")
+                .symbolRenderingMode(.multicolor)
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            Text("Oops!! An Error has occurred")
+                .font(.headline)
+               // .padding([.bottom], 10)
+        }
+        .padding([.bottom], 10)
+        //Text(errorWrapper.error.localizedDescription)
         Text(errorWrapper.guidance)
-            .font(.caption)
+            .font(.title3)
+            .bold()
     }.padding()
 }
 }

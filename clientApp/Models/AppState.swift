@@ -8,6 +8,7 @@
 import Foundation
 
 enum AppError: Error {
+    case register
     case login
 }
 
