@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AuthenticationServices
 
 struct RegistrationScreen: View {
     
@@ -54,12 +55,28 @@ struct RegistrationScreen: View {
             }
            // Text(errorMessage)
         }
+        SignInWithApple()
+          .frame(width: 280, height: 60)
+          .onTapGesture(perform: showAppleLogin)
+
         .navigationTitle("Register")
         .sheet(item: $appState.errorWrapper) { errorWrapper in
                 ErrorView(errorWrapper: errorWrapper)
                     .presentationDetents([.fraction(0.25)])
             }
     }
+    // You should request only user data which you need. Apple generates a user ID for you. So, if your only purpose in grabbing an email is to have a unique identifier, you don’t truly need it — so don’t ask for it
+    private func showAppleLogin() {
+      // 1 All sign in requests need an ASAuthorizationAppleIDRequest
+      let request = ASAuthorizationAppleIDProvider().createRequest()
+
+      // 2 Specify the type of end user data you need to know.
+      request.requestedScopes = [.fullName, .email]
+
+      // 3 Generate the controller which will display the sign in dialog.
+      let controller = ASAuthorizationController(authorizationRequests: [request])
+    }
+
 }
 
 struct RegistrationContainerView: View {

@@ -11,14 +11,14 @@
 		06BE52DC2AB5E0EC00A549D3 /* String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE52DB2AB5E0EC00A549D3 /* String+extensions.swift */; };
 		06BE52DE2AB5E1C800A549D3 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE52DD2AB5E1C800A549D3 /* HTTPClient.swift */; };
 		06BE52E02AB5E59900A549D3 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE52DF2AB5E59900A549D3 /* AppModel.swift */; };
-		06BE52E22AB5E64900A549D3 /* RegisterResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE52E12AB5E64900A549D3 /* RegisterResponseDTO.swift */; };
 		06BE52E52AB6BB7200A549D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE52E42AB6BB7200A549D3 /* Constants.swift */; };
 		06BE52E72AB6C5D700A549D3 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE52E62AB6C5D700A549D3 /* LoginScreen.swift */; };
-		06BE52E92AB6C7F400A549D3 /* LoginResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE52E82AB6C7F400A549D3 /* LoginResponseDTO.swift */; };
 		06BE52EB2AB6CDAB00A549D3 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE52EA2AB6CDAB00A549D3 /* AppState.swift */; };
 		06BE52ED2AB6CEFD00A549D3 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE52EC2AB6CEFD00A549D3 /* HomeScreen.swift */; };
 		06BE52EF2AB6D99C00A549D3 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE52EE2AB6D99C00A549D3 /* ErrorWrapper.swift */; };
 		06BE52F12AB6D9E100A549D3 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE52F02AB6D9E100A549D3 /* ErrorView.swift */; };
+		06BE52F32AB73DF900A549D3 /* SignInWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE52F22AB73DF900A549D3 /* SignInWithApple.swift */; };
+		06BE52F72AB87A3D00A549D3 /* HISSharedDTO in Frameworks */ = {isa = PBXBuildFile; productRef = 06BE52F62AB87A3D00A549D3 /* HISSharedDTO */; };
 		06DE974B2AB4A6E000F7CB6F /* clientAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DE974A2AB4A6E000F7CB6F /* clientAppApp.swift */; };
 		06DE974D2AB4A6E000F7CB6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DE974C2AB4A6E000F7CB6F /* ContentView.swift */; };
 		06DE974F2AB4A6E100F7CB6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DE974E2AB4A6E100F7CB6F /* Assets.xcassets */; };
@@ -50,14 +50,14 @@
 		06BE52DB2AB5E0EC00A549D3 /* String+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extensions.swift"; sourceTree = "<group>"; };
 		06BE52DD2AB5E1C800A549D3 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		06BE52DF2AB5E59900A549D3 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
-		06BE52E12AB5E64900A549D3 /* RegisterResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponseDTO.swift; sourceTree = "<group>"; };
 		06BE52E42AB6BB7200A549D3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		06BE52E62AB6C5D700A549D3 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
-		06BE52E82AB6C7F400A549D3 /* LoginResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDTO.swift; sourceTree = "<group>"; };
 		06BE52EA2AB6CDAB00A549D3 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		06BE52EC2AB6CEFD00A549D3 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		06BE52EE2AB6D99C00A549D3 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
 		06BE52F02AB6D9E100A549D3 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		06BE52F22AB73DF900A549D3 /* SignInWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithApple.swift; sourceTree = "<group>"; };
+		06BE52F42AB75F1C00A549D3 /* clientApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = clientApp.entitlements; sourceTree = "<group>"; };
 		06DE97472AB4A6E000F7CB6F /* clientApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clientApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06DE974A2AB4A6E000F7CB6F /* clientAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clientAppApp.swift; sourceTree = "<group>"; };
 		06DE974C2AB4A6E000F7CB6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06BE52F72AB87A3D00A549D3 /* HISSharedDTO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,8 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				06BE52DF2AB5E59900A549D3 /* AppModel.swift */,
-				06BE52E12AB5E64900A549D3 /* RegisterResponseDTO.swift */,
-				06BE52E82AB6C7F400A549D3 /* LoginResponseDTO.swift */,
 				06BE52EA2AB6CDAB00A549D3 /* AppState.swift */,
 				06BE52EE2AB6D99C00A549D3 /* ErrorWrapper.swift */,
 			);
@@ -138,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				06BE52E42AB6BB7200A549D3 /* Constants.swift */,
+				06BE52F22AB73DF900A549D3 /* SignInWithApple.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -165,6 +165,7 @@
 		06DE97492AB4A6E000F7CB6F /* clientApp */ = {
 			isa = PBXGroup;
 			children = (
+				06BE52F42AB75F1C00A549D3 /* clientApp.entitlements */,
 				06BE52E32AB6BB5600A549D3 /* Utils */,
 				06BE52DA2AB5E0A700A549D3 /* Extensions */,
 				06BE52D92AB5E00900A549D3 /* Clients */,
@@ -219,6 +220,9 @@
 			dependencies = (
 			);
 			name = clientApp;
+			packageProductDependencies = (
+				06BE52F62AB87A3D00A549D3 /* HISSharedDTO */,
+			);
 			productName = clientApp;
 			productReference = 06DE97472AB4A6E000F7CB6F /* clientApp.app */;
 			productType = "com.apple.product-type.application";
@@ -291,6 +295,9 @@
 				Base,
 			);
 			mainGroup = 06DE973E2AB4A6E000F7CB6F;
+			packageReferences = (
+				06BE52F52AB87A3D00A549D3 /* XCRemoteSwiftPackageReference "HISSharedDTO" */,
+			);
 			productRefGroup = 06DE97482AB4A6E000F7CB6F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,11 +348,10 @@
 				06BE52D62AB5DF1000A549D3 /* RegistrationScreen.swift in Sources */,
 				06DE974D2AB4A6E000F7CB6F /* ContentView.swift in Sources */,
 				06BE52EB2AB6CDAB00A549D3 /* AppState.swift in Sources */,
-				06BE52E92AB6C7F400A549D3 /* LoginResponseDTO.swift in Sources */,
 				06BE52ED2AB6CEFD00A549D3 /* HomeScreen.swift in Sources */,
+				06BE52F32AB73DF900A549D3 /* SignInWithApple.swift in Sources */,
 				06DE974B2AB4A6E000F7CB6F /* clientAppApp.swift in Sources */,
 				06BE52F12AB6D9E100A549D3 /* ErrorView.swift in Sources */,
-				06BE52E22AB5E64900A549D3 /* RegisterResponseDTO.swift in Sources */,
 				06BE52E52AB6BB7200A549D3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +513,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = clientApp/clientApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"clientApp/Preview Content\"";
@@ -536,6 +543,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = clientApp/clientApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"clientApp/Preview Content\"";
@@ -676,6 +684,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		06BE52F52AB87A3D00A549D3 /* XCRemoteSwiftPackageReference "HISSharedDTO" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sandhums/HISSharedDTO.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06BE52F62AB87A3D00A549D3 /* HISSharedDTO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06BE52F52AB87A3D00A549D3 /* XCRemoteSwiftPackageReference "HISSharedDTO" */;
+			productName = HISSharedDTO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 06DE973F2AB4A6E000F7CB6F /* Project object */;
 }

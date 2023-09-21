@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "hisshareddto",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sandhums/HISSharedDTO.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "cf5e78b0d7cec8007ec4b5eac4f3367739b8f11d"
+      }
+    }
+  ],
+  "version" : 2
+}
