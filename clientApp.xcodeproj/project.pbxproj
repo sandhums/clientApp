@@ -26,6 +26,10 @@
 		06DE975C2AB4A6E200F7CB6F /* clientAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DE975B2AB4A6E200F7CB6F /* clientAppTests.swift */; };
 		06DE97662AB4A6E200F7CB6F /* clientAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DE97652AB4A6E200F7CB6F /* clientAppUITests.swift */; };
 		06DE97682AB4A6E200F7CB6F /* clientAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DE97672AB4A6E200F7CB6F /* clientAppUITestsLaunchTests.swift */; };
+		06F4FCD12ABEC3AA003609D9 /* UpdateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F4FCD02ABEC3AA003609D9 /* UpdateProfileView.swift */; };
+		06F4FCD52ABEEDE3003609D9 /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F4FCD42ABEEDE3003609D9 /* CountryListView.swift */; };
+		06F4FCD72ABFEEFD003609D9 /* UserUpdateDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F4FCD62ABFEEFD003609D9 /* UserUpdateDTO.swift */; };
+		06F4FCD92ABFF178003609D9 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F4FCD82ABFF178003609D9 /* UserDefaults+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		06DE97612AB4A6E200F7CB6F /* clientAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clientAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06DE97652AB4A6E200F7CB6F /* clientAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clientAppUITests.swift; sourceTree = "<group>"; };
 		06DE97672AB4A6E200F7CB6F /* clientAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clientAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06F4FCD02ABEC3AA003609D9 /* UpdateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileView.swift; sourceTree = "<group>"; };
+		06F4FCD42ABEEDE3003609D9 /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
+		06F4FCD62ABFEEFD003609D9 /* UserUpdateDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpdateDTO.swift; sourceTree = "<group>"; };
+		06F4FCD82ABFF178003609D9 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 				06BE52E62AB6C5D700A549D3 /* LoginScreen.swift */,
 				06BE52EC2AB6CEFD00A549D3 /* HomeScreen.swift */,
 				06BE52F02AB6D9E100A549D3 /* ErrorView.swift */,
+				06F4FCD02ABEC3AA003609D9 /* UpdateProfileView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -113,6 +122,7 @@
 				06BE52DF2AB5E59900A549D3 /* AppModel.swift */,
 				06BE52EA2AB6CDAB00A549D3 /* AppState.swift */,
 				06BE52EE2AB6D99C00A549D3 /* ErrorWrapper.swift */,
+				06F4FCD62ABFEEFD003609D9 /* UserUpdateDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -129,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				06BE52DB2AB5E0EC00A549D3 /* String+extensions.swift */,
+				06F4FCD82ABFF178003609D9 /* UserDefaults+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -138,6 +149,7 @@
 			children = (
 				06BE52E42AB6BB7200A549D3 /* Constants.swift */,
 				06BE52F22AB73DF900A549D3 /* SignInWithApple.swift */,
+				06F4FCD42ABEEDE3003609D9 /* CountryListView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -344,7 +356,11 @@
 				06BE52DC2AB5E0EC00A549D3 /* String+extensions.swift in Sources */,
 				06BE52E02AB5E59900A549D3 /* AppModel.swift in Sources */,
 				06BE52E72AB6C5D700A549D3 /* LoginScreen.swift in Sources */,
+				06F4FCD92ABFF178003609D9 /* UserDefaults+Extensions.swift in Sources */,
 				06BE52DE2AB5E1C800A549D3 /* HTTPClient.swift in Sources */,
+				06F4FCD52ABEEDE3003609D9 /* CountryListView.swift in Sources */,
+				06F4FCD12ABEC3AA003609D9 /* UpdateProfileView.swift in Sources */,
+				06F4FCD72ABFEEFD003609D9 /* UserUpdateDTO.swift in Sources */,
 				06BE52D62AB5DF1000A549D3 /* RegistrationScreen.swift in Sources */,
 				06DE974D2AB4A6E000F7CB6F /* ContentView.swift in Sources */,
 				06BE52EB2AB6CDAB00A549D3 /* AppState.swift in Sources */,

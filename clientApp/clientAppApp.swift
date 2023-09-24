@@ -25,6 +25,8 @@ struct clientAppApp: App {
                             RegistrationScreen()
                         case .home:
                             HomeScreen()
+                        case .profile:
+                            UpdateProfileView()
                         }
                     }
             }

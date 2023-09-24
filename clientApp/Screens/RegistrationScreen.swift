@@ -74,7 +74,7 @@ struct RegistrationScreen: View {
       request.requestedScopes = [.fullName, .email]
 
       // 3 Generate the controller which will display the sign in dialog.
-      let controller = ASAuthorizationController(authorizationRequests: [request])
+//      let controller = ASAuthorizationController(authorizationRequests: [request])
     }
 
 }
@@ -94,6 +94,8 @@ struct RegistrationContainerView: View {
                         LoginScreen()
                     case .home:
                         HomeScreen()
+                    case .profile:
+                        UpdateProfileView()
                     }
                 }
         }

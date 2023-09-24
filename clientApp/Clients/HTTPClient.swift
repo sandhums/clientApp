@@ -35,6 +35,7 @@ enum HTTPMethod {
     case get([URLQueryItem]) // useful for sorting etc
     case post(Data?)
     case delete
+    case patch(Data?)
     
     var name: String { // computed property to return the string value of HTTP methods
         switch self {
@@ -44,6 +45,8 @@ enum HTTPMethod {
                 return "POST"
             case .delete:
                 return "DELETE"
+            case .patch:
+            return "PATCH"
         }
     }
 }
@@ -87,9 +90,13 @@ struct HTTPClient {
             case .post(let data):
                 request.httpMethod = resource.method.name
                 request.httpBody = data
+            case .patch(let data):
+                request.httpMethod = resource.method.name
+                request.httpBody = data
             
             case .delete:
                 request.httpMethod = resource.method.name
+        
         }
         
         let configuration = URLSessionConfiguration.default

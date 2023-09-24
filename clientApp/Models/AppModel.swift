@@ -8,7 +8,10 @@
 import Foundation
 import HISSharedDTO
 
+@MainActor
 class AppModel: ObservableObject {
+    
+    @Published var userProfile: UserUpdateDTO?
     
     let httpClient = HTTPClient()
     
@@ -44,5 +47,28 @@ class AppModel: ObservableObject {
         let defaults = UserDefaults.standard
         defaults.removeObject(forKey: "userId")
         defaults.removeObject(forKey: "authToken")
+    }
+    func populateUserProfile() async throws {
+        
+        guard let userId = UserDefaults.standard.userId else {
+            return
+        }
+        
+        let resource = Resource(url: Constants.Urls.getUserProfile(userId: userId), modelType: UserUpdateDTO.self)
+        print(resource.url.absoluteString)
+        
+        userProfile = try await httpClient.load(resource)
+    }
+    func updateUserProfile(_ userUpdateDTO: UserUpdateDTO) async throws {
+        
+        guard let userId = UserDefaults.standard.userId else {
+            return
+        }
+        
+        let resource = try Resource(url: Constants.Urls.updateUserFor(userId: userId), method: .patch(JSONEncoder().encode(userUpdateDTO)), modelType: UserUpdateDTO.self)
+        
+        _ = try await httpClient.load(resource)
+        // add new grocery to the list
+        
     }
 }

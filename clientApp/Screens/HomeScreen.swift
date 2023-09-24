@@ -24,9 +24,10 @@ struct HomeScreen: View {
                     }
                 }
                     ToolbarItem(placement: .topBarTrailing) {
-                        Button("Logout") {
-                            model.logout()
-                            appState.routes.append(.login)
+                        Button {
+                            appState.routes.append(.profile)
+                        } label: {
+                            Image(systemName: "person.badge.plus")
                         }
                 }
             }
@@ -48,6 +49,8 @@ struct HomeContainerView: View {
                         LoginScreen()
                     case .home:
                         HomeScreen()
+                    case .profile:
+                        UpdateProfileView()
                     }
                 }
         }
