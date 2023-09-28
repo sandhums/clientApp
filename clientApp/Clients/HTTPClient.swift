@@ -12,6 +12,7 @@ enum NetworkError: Error {
     case serverError(String)
     case decodingError
     case invalidResponse
+
 }
 
 extension NetworkError: LocalizedError {
@@ -34,6 +35,7 @@ extension NetworkError: LocalizedError {
 enum HTTPMethod {
     case get([URLQueryItem]) // useful for sorting etc
     case post(Data?)
+    case put(Data?)
     case delete
     case patch(Data?)
     
@@ -43,6 +45,8 @@ enum HTTPMethod {
                 return "GET"
             case .post:
                 return "POST"
+            case .put:
+            return "PUT"
             case .delete:
                 return "DELETE"
             case .patch:
@@ -90,6 +94,9 @@ struct HTTPClient {
             case .post(let data):
                 request.httpMethod = resource.method.name
                 request.httpBody = data
+            case .put(let data):
+            request.httpMethod = resource.method.name
+            request.httpBody = data
             case .patch(let data):
                 request.httpMethod = resource.method.name
                 request.httpBody = data

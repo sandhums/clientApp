@@ -11,19 +11,26 @@ struct HomeScreen: View {
     
     @EnvironmentObject private var model: AppModel
     @EnvironmentObject private var appState: AppState
+    var image: Image?
     
+   
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            .navigationTitle("Home")
-            .navigationBarBackButtonHidden(true)
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Button("Logout") {
-                        model.logout()
-                        appState.routes.append(.login)
-                    }
+        Button {
+            appState.routes.append(.test)
+        } label: {
+            Image(systemName: "person.badge.plus")
+        }
+        .navigationTitle("Home")
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                Button("Logout") {
+                    model.logout()
+                    appState.routes.append(.login)
                 }
-                    ToolbarItem(placement: .topBarTrailing) {
+            }
+            ToolbarItem(placement: .topBarTrailing) {
                         Button {
                             appState.routes.append(.profile)
                         } label: {
@@ -31,8 +38,9 @@ struct HomeScreen: View {
                         }
                 }
             }
+        }
     }
-}
+
 
 struct HomeContainerView: View {
     @StateObject private var model = AppModel()
@@ -51,6 +59,10 @@ struct HomeContainerView: View {
                         HomeScreen()
                     case .profile:
                         UpdateProfileView()
+                    case .address:
+                        UpdateAddressView()
+                    case .test:
+                        Test()
                     }
                 }
         }
@@ -60,5 +72,5 @@ struct HomeContainerView: View {
 }
 
 #Preview {
-   HomeContainerView()
+    HomeContainerView()
 }

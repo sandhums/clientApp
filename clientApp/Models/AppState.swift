@@ -17,6 +17,8 @@ enum Route: Hashable {
     case register
     case home
     case profile
+    case test
+    case address
     
 }
 

@@ -96,6 +96,10 @@ struct RegistrationContainerView: View {
                         HomeScreen()
                     case .profile:
                         UpdateProfileView()
+                    case .address:
+                        UpdateAddressView()
+                    case .test:
+                        Test()
                     }
                 }
         }

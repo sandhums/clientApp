@@ -79,6 +79,10 @@ struct LoginContainerView: View {
                         HomeScreen()
                     case .profile:
                         UpdateProfileView()
+                    case .address:
+                        UpdateAddressView()
+                    case .test:
+                        Test()
                     }
                 }
         }

@@ -21,26 +21,29 @@ struct Urls {
     static func getUserProfile(userId: UUID) -> URL {
         return URL(string: "\(baseUrlPath)/users/\(userId)/getprofile")!
     }
-    static func saveGroceryCategoryBy(userId: UUID) -> URL {
-        return URL(string: "\(baseUrlPath)/users/\(userId)/grocery-categories")!
+    static func getUserAddress(userId: UUID) -> URL {
+        return URL(string: "\(baseUrlPath)/users/\(userId)/address")!
     }
-    
-    static func groceryCategoriesBy(userId: UUID) -> URL {
-        return URL(string: "\(baseUrlPath)/users/\(userId)/grocery-categories")!
-    }
-    static func deleteGroceryCategory(userId: UUID, groceryCategoryId: UUID) -> URL {
-        return URL(string: "\(baseUrlPath)/users/\(userId)/grocery-categories/\(groceryCategoryId)")!
-    }
-    static func saveGroceryItem(userId: UUID, groceryCategoryId: UUID) -> URL {
-        return URL(string: "\(baseUrlPath)/users/\(userId)/grocery-categories/\(groceryCategoryId)/grocery-items")!
-    }
-    
-    static func groceryItemsBy(userId: UUID, groceryCategoryId: UUID) -> URL {
-        return URL(string: "\(baseUrlPath)/users/\(userId)/grocery-categories/\(groceryCategoryId)/grocery-items")!
-    }
-    
-    static func deleteGroceryItem(userId: UUID, groceryCategoryId: UUID, groceryItemId: UUID) -> URL {
-        return URL(string: "\(baseUrlPath)/users/\(userId)/grocery-categories/\(groceryCategoryId)/grocery-items/\(groceryItemId)")!
-    }
+//    static func saveGroceryCategoryBy(userId: UUID) -> URL {
+//        return URL(string: "\(baseUrlPath)/users/\(userId)/grocery-categories")!
+//    }
+//    
+//    static func groceryCategoriesBy(userId: UUID) -> URL {
+//        return URL(string: "\(baseUrlPath)/users/\(userId)/grocery-categories")!
+//    }
+//    static func deleteGroceryCategory(userId: UUID, groceryCategoryId: UUID) -> URL {
+//        return URL(string: "\(baseUrlPath)/users/\(userId)/grocery-categories/\(groceryCategoryId)")!
+//    }
+//    static func saveGroceryItem(userId: UUID, groceryCategoryId: UUID) -> URL {
+//        return URL(string: "\(baseUrlPath)/users/\(userId)/grocery-categories/\(groceryCategoryId)/grocery-items")!
+//    }
+//    
+//    static func groceryItemsBy(userId: UUID, groceryCategoryId: UUID) -> URL {
+//        return URL(string: "\(baseUrlPath)/users/\(userId)/grocery-categories/\(groceryCategoryId)/grocery-items")!
+//    }
+//    
+//    static func deleteGroceryItem(userId: UUID, groceryCategoryId: UUID, groceryItemId: UUID) -> URL {
+//        return URL(string: "\(baseUrlPath)/users/\(userId)/grocery-categories/\(groceryCategoryId)/grocery-items/\(groceryItemId)")!
+//    }
 }
 }
